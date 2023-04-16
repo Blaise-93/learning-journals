@@ -8,14 +8,7 @@
     box-sizing: border-box;
 }
 
-.header .navigation{
-    display: flex;
-    color: #090909;;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Roboto' sans-serif;
 
-}
 #chatbox-logo {
     width: 23.16px;
     height: 23.16px;
@@ -151,24 +144,28 @@ footer {
 @media (min-width:500px) {
     .product-section {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
         grid-gap: 1em;
         justify-items: center;
         align-items: center;
         margin: 10px 20px;
-        
-     
-        
-        
+           
     }
-
+    .view-info {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
     .header .navigation{
         display: flex;
         color: #090909;;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Roboto' sans-serif;
+    
     }
 
     .navbar ul{
-        list-style: none;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -178,7 +175,12 @@ footer {
 
 @media (width:414px) {
     .header .navigation {
+        display: flex;
+        color: #090909;;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Roboto' sans-serif;
         width: 414px;
-       height: 59px; 
+        height: 59px; 
     }
 }
