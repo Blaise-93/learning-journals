@@ -10,8 +10,8 @@
 
 
 #chatbox-logo {
-    width: 23.16px;
-    height: 23.16px;
+    width: 1.45em;
+    height: 1.45em;
    
 
 }
@@ -22,10 +22,10 @@
 }
 
 #img-desc {
-    padding-left: 3.09px;
+    padding-left: 0.193em;
     font-weight: 700;
-    font-size: 13.5522px;
-    line-height: 108.2%; 
+    font-size: 0.847em;
+    line-height: 1.082; 
     color: #0E0E0E;
 }
 
@@ -60,12 +60,12 @@ nav li {
 
 .hero-container {
     color: white;
-    padding:87px 20px 25px 20px;
+    padding:5.440em 1.35em 1.563em 1.25em;
 }
 
 .hero-datetime {
-    line-height: 15px;
-    font-size: 12px;
+    line-height: 1.25;
+    font-size: 0.75em;
     margin: 0 auto;
 }
 
@@ -76,7 +76,7 @@ nav li {
 
 #journal-heading {
     font-weight: 700;
-    font-size: 32px;
+    font-size: 2rem;
     line-height: 1.082;
 }
 .hero-desc {
@@ -89,7 +89,7 @@ nav li {
     flex-direction: column;
     justify-content: center;
     align-items: start;
-    padding: 0 20px;
+    padding: 0 1.25em;
     color: #505050;
 }
 
@@ -105,7 +105,7 @@ nav li {
 
 .item-heading{
    font-weight: 700;
-   font-size: 24px;
+   font-size: 1.5rem;
    line-height: 1.082;
    color: #141414;
    margin: 0
@@ -121,19 +121,19 @@ nav li {
 .view-info {
     display: block;
     text-align: center;
-    padding: 10px 0;
+    padding: 0.625em 0;
     text-decoration-line: underline;
 
 }
 
 footer {
     text-align: center;
-    font-size: 12px;
+    font-size: 0.75em;
 }
 .copyright {
     font-weight: 400;
     line-height: 1.25;
-    padding-top: 3px;
+    padding-top: 0.1875em;
 }
 .footer-desc {
     font-weight: 700;
@@ -141,34 +141,47 @@ footer {
  
 }
 
-@media (min-width:500px) {
+@media (min-width:919px) {
+    body {
+        font-size: 1.1rem;
+        line-height: 1.25;
+    }
     .product-section {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
         grid-gap: 1em;
         justify-items: center;
         align-items: center;
-        margin: 10px 20px;
+        margin: 0.625em 1.25em;
            
     }
-    .view-info {
+  .view-info {
         display: block;
         margin-left: auto;
         margin-right: auto;
-    }
-    .header .navigation{
+    } 
+
+    .header {
         display: flex;
-        color: #090909;;
-        justify-content: center;
-        align-items: center;
-        font-family: 'Roboto' sans-serif;
-    
+        padding-left: 0.85em;
     }
 
-    .navbar ul{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+    .img-desc {
+        font-size: 1rem;
+    }
+   .header , .navigation{
+      display: flex;
+      align-items: center;
+      justify-content: start;
+        
+    }
+
+    ul {
+        padding-left: 65vw;
+    }
+
+    .img-desc {
+        padding-right: 200px;
     }
 
 }
